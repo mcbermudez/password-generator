@@ -1,5 +1,12 @@
-// Assignment code here
+// Set password variables
+var lowerCaseChar = "abcdefghijklmnopqrstuvwxyz";
+var upperCaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numberChar = "0123456789";
+var specialChar = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
 
+// Prompt user to begin generating password
+
+window.onload = alert("Please click on the \"Generate Button\" to start!");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
