@@ -9,7 +9,7 @@
 ## Acceptance Criteria
 * GIVEN I need a new, secure password
 * WHEN I click the button to generate a password
-* HEN I am presented with a series of prompts for password criteria
+* WHEN I am presented with a series of prompts for password criteria
 * WHEN prompted for password criteria
 * THEN I select which criteria to include in the password
 * WHEN prompted for the length of the password
