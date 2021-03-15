@@ -10,7 +10,7 @@ var finalPassword = "";
 var generateBtn = document.querySelector("#generate");
 
 // Prompt the user to press the 'Generate' button
-window.onload = alert("Welcome, please click on the \"Generate Password\" button to get started.")
+window.onload = alert("Welcome, let's create a new, secure password. \nPlease click on the \"Generate Password\" button to get started.")
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -18,26 +18,53 @@ generateBtn.addEventListener("click", writePassword);
 // Start generate password function
 function generatePassword() {
   // Define pass word character min and max limits.
-  var passwordLength = prompt("The password must contain between 8 and 128 characters. How many characters would you like to use?")
+  var passwordLength = prompt("The password must contain between 8 and 128 characters. \nHow many characters do you want to use in your password?")
   
   // Alert the user character length is less than 8 or more than 128.
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Please enter a number between 8 and 128.");
-  }
+  } else
+    // Define remaining for password generation - lowerCase, upperCase, numbers, and/or special characters. Confirm with user which character types to use.
+    // Confirm if user wants to use lowercase letters
+    if (confirm("Do you want to use lower case letters in your password?")); {
+      if (confirm === true) {
+        selectedArr.lowerCase;
+      }
+      // Confirm if user wants to use upper case letters
+      if(confirm("Do you want to use upper case letters in your password?")); {
+        if(confirm === true) {
+          selectedArr.upperCase;
+        }
+        // Confirm is user wants to use numbers
+        if(confirm("Do you want to use numberic characters in your password?")); {
+          if(confirm === true) {
+            selectedArr.numbers;
+          }
+          // Confirm if user wants to use special characters
+          if(confirm("Do you want to use special characters in your password?")); {
+            if(confirm === true) {
+              selectedArr.specialCharacters;
+            } else {
+                // Validate the user's input and confirm that at least one character requirment is satified
+              if (selectedArr.length === 0); {
+                // Alert the user if they have not selected at least one chacter type
+                alert("You must choose at least one character type. Let's try this again!");
+              };
 
-  // Define remaining for password generation - lowerCase, upperCase, numbers, and/or special characters. Prompt user to provide character types.
+              // Return the new password to writePassword
+              for (var i = 0; i <passwordLength; i++)
+              {
+                finalPassword = selectedArr[Math.floor(Math.random() * (selected.Arr.passwordLength))];
+              }
 
-  // Validate the user's input and confirm that at least one character requirment is satified.
-
-  // Generate password when all prompts have been answered and min criteria is met.
-
-  // Display password on the page
-};
-
-// Write password function in the #password input
-function writePassword() {
-  var password = generatePassword();
-  var PasswordTex = document.querySelector("#password");
-  
-  passwordText.value = password;
+              return finalPassword;
+    };
+    
+    // Write password function in the #password input
+    function writePassword() {
+      var password = generatePassword();
+      var passwordText = document.querySelector("#password");
+    
+      passwordText.value = password;
+    
 }
