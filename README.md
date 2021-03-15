@@ -24,7 +24,7 @@
 * THEN the password is either displayed in an alert or written to the page
 
 ## Mock-Up
-
+![image](https://user-images.githubusercontent.com/78455783/111095941-e1db0700-8514-11eb-9977-b9c25348660b.png)
 
 ## Website
 https://mcbermudez.github.io/password-generator/
